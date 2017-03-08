@@ -1,6 +1,6 @@
 # learngit
 
-## Git安装
+## 一、Git安装
 安装完成后，还需要最后一步设置，在命令行输入：
 
     $ git config --global user.name "Your Name"
@@ -8,7 +8,7 @@
 
 注意git config命令的--global参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。
 
-## 创建版本库 
+## 二、创建版本库 
 
     $ git init
 	Initialized empty Git repository in /Users/tolvgx/learngit/.git/
@@ -25,7 +25,7 @@
 - 第一步，使用命令git add <file>，注意，可反复多次使用，添加多个文件；
 - 第二步，使用命令git commit完成。-m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。
 
-## 时光穿梭机
+## 三、时光穿梭机
 
 	$ git reset --hard HEAD^
 	$ git reset --hard commit_id
@@ -91,7 +91,7 @@ Git为我们自动创建的第一个分支master，以及指向master的一个�
 - 一是确实要从版本库中删除该文件，那就用命令`$ git rm test.txt`删掉，并且`git commit`，文件就从版本库中被删除了。  
 - 另一种情况是删错了，因为版本库里还有呢，所以可以很轻松地把误删的文件恢复到最新版本：`$ git checkout -- test.txt`
 
-## 远程仓库（GitHub）
+## 四、远程仓库（GitHub）
 
 第1步：创建SSH Key。在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果已经有了，可直接跳到下一步。如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key：`$ ssh-keygen -t rsa -C "youremail@example.com"`  
 
@@ -124,7 +124,7 @@ Git支持多种协议，包括https，但通过ssh支持的原生git协议速度
 	
 	$ git clone git@github.com:tolvgx/learngit.git
 
-## 分支管理
+## 五、分支管理
 - 分支在实际中有什么用呢？假设你准备开发一个新功能，但是需要两周才能完成，第一周你写了50%的代码，如果立刻提交，由于代码还没写完，不完整的代码库会导致别人不能干活了。如果等代码全部写完再一次提交，又存在丢失每天进度的巨大风险。  
 - 现在有了分支，就不用怕了。你创建了一个属于你自己的分支，别人看不到，还继续在原来的分支上正常工作，而你在自己的分支上干活，想提交就提交，直到开发完毕后，再一次性合并到原来的分支上，这样，既安全，又不影响别人工作。  
 - 其他版本控制系统如SVN等都有分支管理，但是用过之后你会发现，这些版本控制系统创建和切换分支比蜗牛还慢，简直让人无法忍受，结果分支功能成了摆设，大家都不去用。  
@@ -199,5 +199,8 @@ Git支持多种协议，包括https，但通过ssh支持的原生git协议速度
 
 因为创建、合并和删除分支非常快，所以Git鼓励你使用分支完成某个任务，合并后再删掉分支，这和直接在master分支上工作效果是一样的，但过程更安全。
 
-**常用命令：** 
-cd ls cat mkdir rmdir rm vi pwd
+
+## 六、常用命令
+    cd ls cat mkdir rmdir rm vi pwd
+
+# 未完待续。。。
