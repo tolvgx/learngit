@@ -206,6 +206,6 @@ Git支持多种协议，包括https，但通过ssh支持的原生git协议速度
 
 
 ## 六、常用命令
-    cd ls cat mkdir rmdir rm vi pwd
+    cd ls cat mkdir rmdir rm vi pwd 
 
 # 未完待续。。。
